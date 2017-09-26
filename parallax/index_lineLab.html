@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>LGPF | 자바스크립트 스터디 2</title>
+
+  <!-- Favicons-->
+  <link rel="icon" href="./img/favicon-64-react.ico" sizes="64x64">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">
+        <img src="./img/react-touch-icon.ico" alt="" height="30px" class="circle"> React 맛보기
+      </a>
+      <ul class="right hide-on-med-and-down gnb">
+        <li><a href="#inTheory">이론편</a></li>
+        <li><a href="#inPractice">실습편</a></li>
+
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav gnb">
+        <li><a href="#inTheory">이론편</a></li>
+        <li><a href="#inPractice">실습편</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div id="mainBanner" class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <br>
+          <img class="icon hide-on-med-and-down" src="./img/react-icon.png" width="150px" alt="">
+          <h1 class="header center teal-text text-lighten-2">
+                React.js 맛보기 스터디
+              </h1>
+        </div>
+        <div class="row center">
+          <h5 class="header col s12 brown-text">
+            "비개발자들의 React 생활코딩 스터디 in LINE+"
+          </h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="./img/bg_about1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <!-- card test-->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title"><i class="material-icons circle red">play_arrow</i> 아이콘 + 게임 타이틀</span>
+            <p>일반 Text 형 메시지 탬플릿 테스트 입니다.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title"><i class="material-icons circle red white-text">play_arrow</i> 아이콘 + 게임 타이틀</span>
+            <p>회전 목마형은 어떻게 구성을 할 수 있을까요?</p>
+          </div>
+          <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab"><a class="active" href="#test1">Test 1</a></li>
+              <li class="tab"><a href="#test2">Test 2</a></li>
+              <li class="tab"><a href="#test3">Test 3</a></li>
+            </ul>
+          </div>
+          <div class="card-content grey lighten-4">
+            <div id="test1">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./img/background1.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+
+            </div>
+            <div id="test2">
+              <div class="card-image">
+                <img src="./img/background1.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+
+            </div>
+            <div id="test3">
+              <div class="card-image">
+                <img src="./img/background1.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Card Title</span>
+
+                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="#">수정 링크?</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="./img/background3.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">수정 링크?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="large material-icons">code</i></h2>
+            <h5 class="center">트랜디한 웹기술!</h5>
+
+            <p class="light">최신 웹개발 트랜드인 React.js 에 대해서 배워보고 직접 활용하는 기술을 배워보세요.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">weekend</i></h2>
+            <h5 class="center">코딩은 선택!</h5>
+
+            <p class="light">직접 코딩을 하지 않아도 OK! 같이 동영상을 보고 새로운 웹개발 트랜드를 어떻게 활용할지를 고민합니다. </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">supervisor_account</i></h2>
+            <h5 class="center">실습을 통해 하나하나!</h5>
+            <p class="light">인프런에서 제공하는 강의를 함께 들으며 차근차근 진행하는 교육을 통해서 간단한 메모장앱을 만들어보고 이를 실무에 활용할 수 있도록 도와드립니다.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">한번도 코딩을 해본 적이 없어 바로 실습하기 어려우신가요? 괜찮습니다! <br />
+            직접 코딩을 할 것 없이 어떤 기술인지를 알아보는 것만으로도 OK! <br />
+            혹시 모자라신가요? 그러면 직접 코딩을 따라하는 <strong>실전 스터디</strong>도 준비하고 있습니다!
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./img/bg_about2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div id="inTheory" class="section classFri">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="material-icons large brown-text">keyboard</i> <br />이론편 (<b>화요일 점심</b>)</h3>
+          <blockquote class="left-align light">
+            코딩없이 강의를 수강하는 점심시간 스터디 입니다. <br /> 인프런의 <u>React.js 입문</u> 강의를 함께 들으면서 생코를 시작하세요!
+          </blockquote>
+          <ul class="collapsible popout" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">videocam</i>수업 소개 강의 맛보기</div>
+              <div class="collapsible-body video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GEoNiUcVwjE?list=PL9FpF_z-xR_GMujql3S_XGV2SpdfDBkeC" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header active"><i class="material-icons">today</i>일정 및 상세계획</div>
+              <div class="collapsible-body">
+                <table class="striped">
+                  <thead>
+                    <tr>
+                      <th data-field="id">구분</th>
+                      <th data-field="name">상세</th>
+                      <th data-field="price">비고</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>기간</td>
+                      <td>1차: 2017.08.22 - 11월 (3개월)</td>
+                      <td>MOOC 진도에 따라서 다소 차이가 있을 수 있습니다. </td>
+                    </tr>
+                    <tr>
+                      <td>스터디 시간</td>
+                      <td>매주 <b>화요일</b> 점심시간 (1시-2시)</td>
+                      <td>(변경될 수 있음)</td>
+                    </tr>
+                    <tr>
+                      <td>스터디 장소</td>
+                      <td>20-4 회의실</td>
+                      <td>(예약 후 공지)</td>
+                    </tr>
+                    <tr>
+                      <td>교재</td>
+                      <td><a href="https://youtu.be/GEoNiUcVwjE?list=PL9FpF_z-xR_GMujql3S_XGV2SpdfDBkeC" target="_blank">Youtube React 강의</a></td>
+                      <td><a href="https://www.inflearn.com/course/react-%EA%B0%95%EC%A2%8C-velopert/?subscribe" target="_blank">React & Express 를 이용한 웹 어플리케이션 개발하기(인프런)</td>
+                      </tr>
+                      <tr>
+                        <td>모집 인원</td>
+                        <td>최대 8명</td>
+                        <td>문의: 박주형</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+            </ul>
+            <a href="http://ehrd.navercorp.com/" target="_blank" class="waves-effect waves-light btn-large enrollment"><i class="material-icons left">input</i>신청하기</a>
+
+              </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container classTue">
+          <div class="row center">
+            <h4 class="header col s12 light white-text">“거부할 수 없는 입학선물!<br />최신 Javascript 책을 최대 2권까지 선물로 드립니다! ”</h4>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="./img/bg_about3.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+
+    <div class="container">
+      <div id="inPractice" class="section">
+
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="material-icons large brown-text">developer_mode</i> <br />실습편 (보충수업, 금요일)</h3>
+
+            <blockquote class="left-align light">
+              백문이불여일'타'! 직접 React로 웹앱을 만들어보세요! 이런 분들에게 권장합니다.
+            </blockquote>
+            <ul class="collapsible popout left-align" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">chat</i>코딩을 입문하는 기획자</div>
+                <div class="collapsible-body">
+                  <p>코딩을 통해서 직접 개발자의 입장에서 기획을 해보는 눈을 기를 수 있습니다</p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">equalizer</i>React를 시작하려는 개발자</div>
+                <div class="collapsible-body">
+                  <p>혼자 개발하기 심심하시죠? HelloWorld를 같이 찍어드릴 수 있습니다! 함께해요!</p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">adb</i>React가 궁금한 모든 분들!</div>
+                <div class="collapsible-body">
+                  <p>비 개발자 독학으로 혼자서 React를 공부해서 활용하기는 어렵습니다. 같이 강의를 듣고 기초부터 고급 사용법까지 한번에 배워보세요.</p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header active"><i class="material-icons">today</i>실습편 학습일정 및 상세 내용</div>
+                <div class="collapsible-body">
+                  <table class="striped">
+                    <thead class="center">
+                      <tr>
+                        <th data-field="id">구분</th>
+                        <th data-field="name">상세</th>
+                        <th data-field="price">비고</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>기간</td>
+                        <td>2017.08.22 - 11월 (3개월)<br />이론편과 동시에 진행합니다.</td>
+                        <td>초반에는 이론스터디 + 숙제로 진행 / 이후 프로젝트는 집합수업으로 진행합니다. </td>
+                      </tr>
+                      <tr>
+                        <td>스터디 시간</td>
+                        <td>(비정기) <strong>금요일 점심시간</strong> (1시간)</td>
+                        <td>(프로젝특 기간 동안에만 단기로 금요일 스터디를 진행)</td>
+                      </tr>
+                      <tr>
+                        <td>스터디 장소</td>
+                        <td>20-4 회의실 </td>
+                        <td>(예약 후 공지)</td>
+                      </tr>
+                      <tr>
+                        <td>교재</td>
+                        <td>상동</td>
+                        <td>상동</td>
+                      </tr>
+                      <tr>
+                        <td>모집 인원</td>
+                        <td>최대 8명</td>
+                        <td>문의: 박주형</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <a href="http://ehrd.navercorp.com/" target="_blank" class="waves-effect waves-light btn-large"><i class="material-icons left">input</i>신청하기</a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">생활코딩이란?</h5>
+            <p class="grey-text text-lighten-4">생활코딩은 egoing님이 운영하시는 opentutorials.org의 무료 온라인 강의(MOOC)로 일반인들에게 프로그래밍을 알려주는 것을 목적으로 하는 비영리 활동입니다. <b>본 플라랩은 egoing님과는 직접 관련이 없으며, 로고 등 모든 저작권은 opentutorials에 있습니다.</b> 본 모임은 생활코딩의 목적과 취지에 동감해서 LINE+ 내 비개발직군의 생활코딩을 도모하고자 만든 동명의 사내스터디 입니다.</p>
+
+
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">생활코딩 관련 링크</h5>
+            <ul>
+              <li><a class="white-text" href="https://opentutorials.org/course/1" target="_blank">생활코딩 사이트</a></li>
+              <li><a class="white-text" href="http://goo.gl/BjjSh">생활코딩 페이스북 그룹</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">React.js 수업 링크</h5>
+            <ul>
+              <li><a class="white-text" href="https://www.inflearn.com/course/react-%EA%B0%95%EC%A2%8C-velopert/?subscribe">React&Express 를 이용한 웹 개발하기</a></li>
+              <li><a class="white-text" href="https://youtu.be/GEoNiUcVwjE?list=PL9FpF_z-xR_GMujql3S_XGV2SpdfDBkeC">Youtube로 모아보기</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by JooHyung Park
+        </div>
+      </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
